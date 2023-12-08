@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cfa-snr"
+version = "0.1.0"
+description = "Demonstration of the impact of a CFA on SNR"
+authors = ["Roman Pearah <neverfox@neverfox.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+colour-demosaicing = "^0.2.4"
+jupyter = "^1.0.0"
+imageio = {extras = ["fits"], version = "^2.33.0"}
+matplotlib = "^3.8.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
